@@ -1,0 +1,19 @@
+Real world scenario if you wanted to try something different:
+(i) Connect to a SQL server storing badge swipe in timestamps
+
+(ii) Grab FirstName, LastName, BadgeSwipeInTime since the last time we ran
+
+(iii) Connect to Active Directory AD
+
+(iv) Find the User's email address and last logon timestamp in AD that corresponds to the SQL server FirstName/LastName/BadgeSwipeInTime from step ii
+
+(v) Send email to user with their last login, from AD, and last badge swipe in time, from SQL server.
+Schedule the above job daily.
+
+Bonus: Scale the above situation to 100xthousand users in AD and in the SQL server DB. You will be amazed at how the different data structures in powershell affect performance.
+We cover AD more tomorrow.
+
+
+
+***** Setup ******
+
